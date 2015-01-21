@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="General test suite">
+    
+    <listeners>
+		<listener class-name="user.instabeat.me.listeners.Listener"></listener>
+	</listeners>
+	
+	<suite-files>
+		
+		<!-- Chrome suite -->
+		<suite-file path = "chromeSanity.xml" />
+		
+		<!-- IE suite -->
+		<!-- <suite-file path = "ie.xml" /> -->
+		
+		<!-- FF suite -->
+		<suite-file path = "firefoxSanity.xml" />
+	
+	</suite-files>
+</suite>
+

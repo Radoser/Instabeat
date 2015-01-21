@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+   <properties> 
+       
+       <!-- Staging server URLs -->
+       <entry key="staging.url">http://staging-web-664817575.us-west-2.elb.amazonaws.com/user/</entry>
+       <entry key="stagingApp.url">http://staging-application-1234195952.us-west-2.elb.amazonaws.com/login</entry>
+       
+       <!-- Production server URLs -->
+       <entry key="production.url">http://user.instabeat.me/user</entry>
+       <entry key="productionApp.url">http://app.instabeat.me/login</entry>
+       
+       <!-- Gmail account credentials -->
+       <entry key="gmailUser">fortestgl@gmail.com</entry>
+       <entry key="gmailUserPassword">123456789_qwe</entry>
+       
+       <!-- Staging test account credentials -->
+       <entry key="test.user">fortestgl+1@gmail.com</entry>
+       <entry key="test.userPassword">123456</entry>
+       
+       <!-- Facebook test account credentials (password: 123456) -->
+       <entry key="FBUser">fortestgl@gmail.com</entry>
+       
+       <!-- Facebook test2 account credentials (password: 123456) -->
+       <entry key="FBUser2">lpncmnf_bushakson_1406895414@tfbnw.net</entry>
+              
+      <!-- Twitter test account credentials -->
+       <entry key="twitterUser">testusergl@ukr.net</entry>
+       <entry key="twitterUserPassword">123qwe</entry>
+       
+   </properties>
