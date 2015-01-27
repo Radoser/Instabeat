@@ -1,0 +1,658 @@
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T19:29:23+02:00)
+Maven home: D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5
+Java version: 1.8.0_25, vendor: Oracle Corporation
+Java home: C:\Program Files\Java\jdk1.8.0_25\jre
+Default locale: en_US, platform encoding: Cp1251
+OS name: "windows 7", version: "6.1", arch: "amd64", family: "dos"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\roman.mykytenko\.m2\settings.xml
+[DEBUG] Using local repository at C:\Users\roman.mykytenko\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\roman.mykytenko\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project user.instabeat.me:webAutomation:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: user.instabeat.me:webAutomation:jar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, compile]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building webAutomation 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       user.instabeat.me:webAutomation:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=71, ConflictIdSorter.graphTime=10, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=46, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10, ConflictResolver.conflictItemCount=67, DefaultDependencyCollector.collectTime=386, DefaultDependencyCollector.transformTime=20}
+[DEBUG] user.instabeat.me:webAutomation:jar:1.0-SNAPSHOT
+[DEBUG]    org.testng:testng:jar:6.8.17:compile
+[DEBUG]       org.beanshell:bsh:jar:2.0b4:compile
+[DEBUG]       com.beust:jcommander:jar:1.27:compile
+[DEBUG]    org.seleniumhq.selenium:selenium-java:jar:2.44.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-chrome-driver:jar:2.44.0:compile
+[DEBUG]          org.seleniumhq.selenium:selenium-remote-driver:jar:2.44.0:compile
+[DEBUG]             cglib:cglib-nodep:jar:2.1_3:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-htmlunit-driver:jar:2.44.0:compile
+[DEBUG]          net.sourceforge.htmlunit:htmlunit:jar:2.15:compile
+[DEBUG]             xalan:xalan:jar:2.7.1:compile
+[DEBUG]                xalan:serializer:jar:2.7.1:compile
+[DEBUG]             commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]             org.apache.commons:commons-lang3:jar:3.3.2:compile
+[DEBUG]             org.apache.httpcomponents:httpmime:jar:4.3.3:compile
+[DEBUG]             commons-codec:commons-codec:jar:1.9:compile
+[DEBUG]             net.sourceforge.htmlunit:htmlunit-core-js:jar:2.15:compile
+[DEBUG]             xerces:xercesImpl:jar:2.11.0:compile
+[DEBUG]                xml-apis:xml-apis:jar:1.4.01:compile
+[DEBUG]             net.sourceforge.nekohtml:nekohtml:jar:1.9.21:compile
+[DEBUG]             net.sourceforge.cssparser:cssparser:jar:0.9.14:compile
+[DEBUG]                org.w3c.css:sac:jar:1.3:compile
+[DEBUG]             commons-logging:commons-logging:jar:1.1.3:compile
+[DEBUG]             org.eclipse.jetty:jetty-websocket:jar:8.1.15.v20140411:compile
+[DEBUG]                org.eclipse.jetty:jetty-util:jar:8.1.15.v20140411:compile
+[DEBUG]                org.eclipse.jetty:jetty-io:jar:8.1.15.v20140411:compile
+[DEBUG]                org.eclipse.jetty:jetty-http:jar:8.1.15.v20140411:compile
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.3.4:compile
+[DEBUG]             org.apache.httpcomponents:httpcore:jar:4.3.2:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-firefox-driver:jar:2.44.0:compile
+[DEBUG]          commons-io:commons-io:jar:2.4:compile
+[DEBUG]          org.apache.commons:commons-exec:jar:1.1:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-ie-driver:jar:2.44.0:compile
+[DEBUG]          net.java.dev.jna:jna:jar:3.4.0:compile
+[DEBUG]          net.java.dev.jna:platform:jar:3.4.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-safari-driver:jar:2.44.0:compile
+[DEBUG]       org.seleniumhq.selenium:selenium-support:jar:2.44.0:compile
+[DEBUG]       org.webbitserver:webbit:jar:0.4.14:compile
+[DEBUG]          io.netty:netty:jar:3.5.2.Final:compile
+[DEBUG]    org.seleniumhq.selenium:selenium-api:jar:2.44.0:compile
+[DEBUG]       com.google.guava:guava:jar:18.0:compile
+[DEBUG]       com.google.code.gson:gson:jar:2.3:compile
+[DEBUG]    log4j:log4j:jar:1.2.17:compile
+[DEBUG]    sikuli:sikuli:jar:1.0.1:compile
+[DEBUG]    org:json:jar:20120521:compile
+[DEBUG]    javax.mail:mail:jar:1.5.0-b01:compile
+[DEBUG]       javax.activation:activation:jar:1.1:compile
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ webAutomation ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=30, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = D:\Git\Instabeat\target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = D:\Git\Instabeat\target\classes
+[DEBUG]   (f) reportDirectory = D:\Git\Instabeat\target\site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = D:\Git\Instabeat\target\test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting D:\Git\Instabeat\target
+[INFO] Deleting file D:\Git\Instabeat\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst
+[INFO] Deleting file D:\Git\Instabeat\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst
+[INFO] Deleting directory D:\Git\Instabeat\target\maven-status\maven-compiler-plugin\compile\default-compile
+[INFO] Deleting directory D:\Git\Instabeat\target\maven-status\maven-compiler-plugin\compile
+[INFO] Deleting directory D:\Git\Instabeat\target\maven-status\maven-compiler-plugin
+[INFO] Deleting directory D:\Git\Instabeat\target\maven-status
+[INFO] Deleting file D:\Git\Instabeat\target\classes\properties.xml
+[INFO] Deleting file D:\Git\Instabeat\target\classes\log4j.xml
+[INFO] Deleting file D:\Git\Instabeat\target\classes\errorMessages.properties
+[INFO] Deleting file D:\Git\Instabeat\target\classes\drivers\ie-driver\IEDriverServer2.44.exe
+[INFO] Deleting directory D:\Git\Instabeat\target\classes\drivers\ie-driver
+[INFO] Deleting file D:\Git\Instabeat\target\classes\drivers\chrome-win\chromedriver.exe
+[INFO] Deleting directory D:\Git\Instabeat\target\classes\drivers\chrome-win
+[INFO] Deleting file D:\Git\Instabeat\target\classes\drivers\chrome-mac\chromedriver
+[INFO] Deleting directory D:\Git\Instabeat\target\classes\drivers\chrome-mac
+[INFO] Deleting directory D:\Git\Instabeat\target\classes\drivers
+[INFO] Deleting directory D:\Git\Instabeat\target\classes
+[INFO] Deleting directory D:\Git\Instabeat\target
+[DEBUG] Skipping non-existing directory D:\Git\Instabeat\target\classes
+[DEBUG] Skipping non-existing directory D:\Git\Instabeat\target\test-classes
+[DEBUG] Skipping non-existing directory D:\Git\Instabeat\target\site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webAutomation ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=180, DefaultDependencyCollector.transformTime=10}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = D:\Git\Instabeat\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: user.instabeat.me:webAutomation:1.0-SNAPSHOT @ D:\Git\Instabeat\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: D:\Git\Instabeat\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@2cf92cc7
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\Windows, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.PROMPT=$P$G, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_25\jre\classes, env.COMPUTERNAME=LWO1-LHP-F49053, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_25-b18, env.HOMEPATH=\, project.build.sourceEncoding=UTF-8, env.HOMESHARE=\\synapse.com\dfs-hrk\home\roman.mykytenko, user.name=roman.mykytenko, maven.build.version=Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T19:29:23+02:00), env.WINDOWS_TRACING_FLAGS=3, env.PATH=C:\Program Files\ImageMagick-6.9.0-Q16;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;C:\Program Files (x86)\Windows Live\Shared;D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5\bin;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Nmap, user.language=en, env.WINDIR=C:\Windows, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_25\jre\bin, classworlds.conf=D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5\bin\m2.conf, java.version=1.8.0_25, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel, user.timezone=Europe/Helsinki, env.=A:=A:\, env.TEMP=C:\Users\ROMAN~1.MYK\AppData\Local\Temp, sun.arch.data.model=64, env.WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_25\jre\lib\endorsed, sun.cpu.isalist=amd64, env.HOMEDRIVE=Z:, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=US, java.home=C:\Program Files\Java\jdk1.8.0_25\jre, env.APPDATA=C:\Users\roman.mykytenko\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, env.OS=Windows_NT, os.version=6.1, env.=::=::\, path.separator=;, java.vm.version=25.25-b02, user.variant=, env.USERPROFILE=C:\Users\roman.mykytenko, env.JAVA_HOME=C:\Program Files\Java\jdk1.8.0_25, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TMP=C:\Users\ROMAN~1.MYK\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, user.script=, user.home=C:\Users\roman.mykytenko, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.=EXITCODE=00000001, env.SESSIONNAME=Console, java.specification.vendor=Oracle Corporation, env.M2_HOME=D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5, env.NUMBER_OF_PROCESSORS=4, java.library.path=C:\Program Files\Java\jdk1.8.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\ImageMagick-6.9.0-Q16;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Python27;C:\Program Files (x86)\Windows Live\Shared;D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5\bin;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Nmap;., java.vendor.url=http://java.oracle.com/, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.USERDNSDOMAIN=SYNAPSE.COM, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.MAVEN_CMD_LINE_ARGS=clean compile -X, env.SIKULI_HOME=D:\Tools\Sikuli, java.vm.vendor=Oracle Corporation, maven.home=D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean compile -X, java.class.path=D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar, env.PROGRAMW6432=C:\Program Files, maven.version=3.2.5, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.MAVEN_JAVA_EXE="C:\Program Files\Java\jdk1.8.0_25\bin\java.exe", java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\DC-LWO1-1, java.vm.specification.version=1.8, env.PROCESSOR_ARCHITECTURE=AMD64, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, env.HOME=Z:\, java.io.tmpdir=C:\Users\ROMAN~1.MYK\AppData\Local\Temp\, env.PROCESSOR_REVISION=3c03, env.VBOX_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, env.=D:=D:\Git\Instabeat, env.LOCALAPPDATA=C:\Users\roman.mykytenko\AppData\Local, user.dir=D:\Git\Instabeat, line.separator=
+, env.CLASSWORLDS_JAR="D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar", java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.M2=D:\Java\JARs\apache-maven-3.2.5-bin\apache-maven-3.2.5\bin, env.ERROR_CODE=0, env.USERNAME=roman.mykytenko, sun.stderr.encoding=cp866, file.encoding=Cp1251, env.VS100COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools\, env.USERDOMAIN=SYNAPSE, java.specification.version=1.8, env.=C:=C:\Users\roman.mykytenko, env.PROCESSOR_LEVEL=6}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory D:\Git\Instabeat\src\main\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 6 resources
+[DEBUG] file chromedriver has a filtered file extension
+[DEBUG] copy D:\Git\Instabeat\src\main\resources\drivers\chrome-mac\chromedriver to D:\Git\Instabeat\target\classes\drivers\chrome-mac\chromedriver
+[DEBUG] file chromedriver.exe has a filtered file extension
+[DEBUG] copy D:\Git\Instabeat\src\main\resources\drivers\chrome-win\chromedriver.exe to D:\Git\Instabeat\target\classes\drivers\chrome-win\chromedriver.exe
+[DEBUG] file IEDriverServer2.44.exe has a filtered file extension
+[DEBUG] copy D:\Git\Instabeat\src\main\resources\drivers\ie-driver\IEDriverServer2.44.exe to D:\Git\Instabeat\target\classes\drivers\ie-driver\IEDriverServer2.44.exe
+[DEBUG] file errorMessages.properties has a filtered file extension
+[DEBUG] copy D:\Git\Instabeat\src\main\resources\errorMessages.properties to D:\Git\Instabeat\target\classes\errorMessages.properties
+[DEBUG] file log4j.xml has a filtered file extension
+[DEBUG] copy D:\Git\Instabeat\src\main\resources\log4j.xml to D:\Git\Instabeat\target\classes\log4j.xml
+[DEBUG] file properties.xml has a filtered file extension
+[DEBUG] copy D:\Git\Instabeat\src\main\resources\properties.xml to D:\Git\Instabeat\target\classes\properties.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ webAutomation ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=1, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=349, DefaultDependencyCollector.transformTime=2}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:1.0
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.5.5
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = D:\Git\Instabeat
+[DEBUG]   (f) buildDirectory = D:\Git\Instabeat\target
+[DEBUG]   (f) classpathElements = [D:\Git\Instabeat\target\classes, C:\Users\roman.mykytenko\.m2\repository\org\testng\testng\6.8.17\testng-6.8.17.jar, C:\Users\roman.mykytenko\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar, C:\Users\roman.mykytenko\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-java\2.44.0\selenium-java-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.44.0\selenium-chrome-driver-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.44.0\selenium-remote-driver-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.44.0\selenium-htmlunit-driver-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.15\htmlunit-2.15.jar, C:\Users\roman.mykytenko\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar, C:\Users\roman.mykytenko\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar, C:\Users\roman.mykytenko\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar, C:\Users\roman.mykytenko\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar, C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpmime\4.3.3\httpmime-4.3.3.jar, C:\Users\roman.mykytenko\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar, C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.15\htmlunit-core-js-2.15.jar, C:\Users\roman.mykytenko\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar, C:\Users\roman.mykytenko\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar, C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.21\nekohtml-1.9.21.jar, C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.14\cssparser-0.9.14.jar, C:\Users\roman.mykytenko\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar, C:\Users\roman.mykytenko\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar, C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.15.v20140411\jetty-websocket-8.1.15.v20140411.jar, C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-util\8.1.15.v20140411\jetty-util-8.1.15.v20140411.jar, C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-io\8.1.15.v20140411\jetty-io-8.1.15.v20140411.jar, C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-http\8.1.15.v20140411\jetty-http-8.1.15.v20140411.jar, C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpclient\4.3.4\httpclient-4.3.4.jar, C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.44.0\selenium-firefox-driver-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar, C:\Users\roman.mykytenko\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.44.0\selenium-ie-driver-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar, C:\Users\roman.mykytenko\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.44.0\selenium-safari-driver-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-support\2.44.0\selenium-support-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar, C:\Users\roman.mykytenko\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar, C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-api\2.44.0\selenium-api-2.44.0.jar, C:\Users\roman.mykytenko\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar, C:\Users\roman.mykytenko\.m2\repository\com\google\code\gson\gson\2.3\gson-2.3.jar, C:\Users\roman.mykytenko\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, C:\Users\roman.mykytenko\.m2\repository\sikuli\sikuli\1.0.1\sikuli-1.0.1.jar, C:\Users\roman.mykytenko\.m2\repository\org\json\20120521\json-20120521.jar, C:\Users\roman.mykytenko\.m2\repository\javax\mail\mail\1.5.0-b01\mail-1.5.0-b01.jar, C:\Users\roman.mykytenko\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar]
+[DEBUG]   (f) compileSourceRoots = [D:\Git\Instabeat\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = D:\Git\Instabeat\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = D:\Git\Instabeat\target\classes
+[DEBUG]   (f) projectArtifact = user.instabeat.me:webAutomation:jar:1.0-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@2cf92cc7
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@2cf92cc7
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [D:\Git\Instabeat\src\main\java]
+[DEBUG] Classpath: [D:\Git\Instabeat\target\classes
+ C:\Users\roman.mykytenko\.m2\repository\org\testng\testng\6.8.17\testng-6.8.17.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar
+ C:\Users\roman.mykytenko\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-java\2.44.0\selenium-java-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.44.0\selenium-chrome-driver-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.44.0\selenium-remote-driver-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.44.0\selenium-htmlunit-driver-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.15\htmlunit-2.15.jar
+ C:\Users\roman.mykytenko\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar
+ C:\Users\roman.mykytenko\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar
+ C:\Users\roman.mykytenko\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpmime\4.3.3\httpmime-4.3.3.jar
+ C:\Users\roman.mykytenko\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar
+ C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.15\htmlunit-core-js-2.15.jar
+ C:\Users\roman.mykytenko\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar
+ C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.21\nekohtml-1.9.21.jar
+ C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.14\cssparser-0.9.14.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar
+ C:\Users\roman.mykytenko\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.15.v20140411\jetty-websocket-8.1.15.v20140411.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-util\8.1.15.v20140411\jetty-util-8.1.15.v20140411.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-io\8.1.15.v20140411\jetty-io-8.1.15.v20140411.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-http\8.1.15.v20140411\jetty-http-8.1.15.v20140411.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpclient\4.3.4\httpclient-4.3.4.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.44.0\selenium-firefox-driver-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.44.0\selenium-ie-driver-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.44.0\selenium-safari-driver-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-support\2.44.0\selenium-support-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar
+ C:\Users\roman.mykytenko\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-api\2.44.0\selenium-api-2.44.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+ C:\Users\roman.mykytenko\.m2\repository\com\google\code\gson\gson\2.3\gson-2.3.jar
+ C:\Users\roman.mykytenko\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+ C:\Users\roman.mykytenko\.m2\repository\sikuli\sikuli\1.0.1\sikuli-1.0.1.jar
+ C:\Users\roman.mykytenko\.m2\repository\org\json\20120521\json-20120521.jar
+ C:\Users\roman.mykytenko\.m2\repository\javax\mail\mail\1.5.0-b01\mail-1.5.0-b01.jar
+ C:\Users\roman.mykytenko\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar]
+[DEBUG] Output directory: D:\Git\Instabeat\target\classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pagesMainFunctions\PagesWebElements.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\listeners\Listener.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\ForgotPasswordPageResults.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\GetStartedSecondStep.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pagesMainFunctions\ParametersManager.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\dashboard\ProfilePageSettings.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\GetStartedPage.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pagesMainFunctions\PropertiesXml.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\ForgotPasswordPage.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\ResetPasswordPage.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\driver\CreateDriver.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\LoginPage.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pagesMainFunctions\ApplicationLogin.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\dashboard\HomePage.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pagesMainFunctions\ImapGmail.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\dashboard\HeartRateZonesPage.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\dashboard\ProfilePage.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\GetStartedThirdStep.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pagesMainFunctions\PagesMainFunctions.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\listeners\DriverEventHandler.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\GetSartedFirstStep.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pagesMainFunctions\Utils.java
+[DEBUG] Stale source detected: D:\Git\Instabeat\src\main\java\user\instabeat\me\pagesMainFunctions\PostSessions.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  D:\Git\Instabeat\target\classes
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\testng\testng\6.8.17\testng-6.8.17.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-java\2.44.0\selenium-java-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.44.0\selenium-chrome-driver-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.44.0\selenium-remote-driver-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.44.0\selenium-htmlunit-driver-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.15\htmlunit-2.15.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpmime\4.3.3\httpmime-4.3.3.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.15\htmlunit-core-js-2.15.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.21\nekohtml-1.9.21.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.14\cssparser-0.9.14.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.15.v20140411\jetty-websocket-8.1.15.v20140411.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-util\8.1.15.v20140411\jetty-util-8.1.15.v20140411.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-io\8.1.15.v20140411\jetty-io-8.1.15.v20140411.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-http\8.1.15.v20140411\jetty-http-8.1.15.v20140411.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpclient\4.3.4\httpclient-4.3.4.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.44.0\selenium-firefox-driver-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.44.0\selenium-ie-driver-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.44.0\selenium-safari-driver-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-support\2.44.0\selenium-support-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-api\2.44.0\selenium-api-2.44.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\com\google\code\gson\gson\2.3\gson-2.3.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\sikuli\sikuli\1.0.1\sikuli-1.0.1.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\org\json\20120521\json-20120521.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\javax\mail\mail\1.5.0-b01\mail-1.5.0-b01.jar
+[DEBUG]  C:\Users\roman.mykytenko\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar
+[DEBUG] Source roots:
+[DEBUG]  D:\Git\Instabeat\src\main\java
+[DEBUG] Command line options:
+[DEBUG] -d D:\Git\Instabeat\target\classes -classpath D:\Git\Instabeat\target\classes;C:\Users\roman.mykytenko\.m2\repository\org\testng\testng\6.8.17\testng-6.8.17.jar;C:\Users\roman.mykytenko\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\roman.mykytenko\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-java\2.44.0\selenium-java-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.44.0\selenium-chrome-driver-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.44.0\selenium-remote-driver-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.44.0\selenium-htmlunit-driver-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.15\htmlunit-2.15.jar;C:\Users\roman.mykytenko\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;C:\Users\roman.mykytenko\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;C:\Users\roman.mykytenko\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\roman.mykytenko\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpmime\4.3.3\httpmime-4.3.3.jar;C:\Users\roman.mykytenko\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.15\htmlunit-core-js-2.15.jar;C:\Users\roman.mykytenko\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\roman.mykytenko\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.21\nekohtml-1.9.21.jar;C:\Users\roman.mykytenko\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.14\cssparser-0.9.14.jar;C:\Users\roman.mykytenko\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\roman.mykytenko\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.15.v20140411\jetty-websocket-8.1.15.v20140411.jar;C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-util\8.1.15.v20140411\jetty-util-8.1.15.v20140411.jar;C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-io\8.1.15.v20140411\jetty-io-8.1.15.v20140411.jar;C:\Users\roman.mykytenko\.m2\repository\org\eclipse\jetty\jetty-http\8.1.15.v20140411\jetty-http-8.1.15.v20140411.jar;C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpclient\4.3.4\httpclient-4.3.4.jar;C:\Users\roman.mykytenko\.m2\repository\org\apache\httpcomponents\httpcore\4.3.2\httpcore-4.3.2.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.44.0\selenium-firefox-driver-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\roman.mykytenko\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.44.0\selenium-ie-driver-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\roman.mykytenko\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.44.0\selenium-safari-driver-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-support\2.44.0\selenium-support-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\roman.mykytenko\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\roman.mykytenko\.m2\repository\org\seleniumhq\selenium\selenium-api\2.44.0\selenium-api-2.44.0.jar;C:\Users\roman.mykytenko\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar;C:\Users\roman.mykytenko\.m2\repository\com\google\code\gson\gson\2.3\gson-2.3.jar;C:\Users\roman.mykytenko\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\roman.mykytenko\.m2\repository\sikuli\sikuli\1.0.1\sikuli-1.0.1.jar;C:\Users\roman.mykytenko\.m2\repository\org\json\20120521\json-20120521.jar;C:\Users\roman.mykytenko\.m2\repository\javax\mail\mail\1.5.0-b01\mail-1.5.0-b01.jar;C:\Users\roman.mykytenko\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar; -sourcepath D:\Git\Instabeat\src\main\java; -g -nowarn -target 1.5 -source 1.5 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 23 source files to D:\Git\Instabeat\target\classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /D:/Git/Instabeat/src/main/java/user/instabeat/me/pages/GetStartedPage.java: D:\Git\Instabeat\src\main\java\user\instabeat\me\pages\GetStartedPage.java uses unchecked or unsafe operations.
+[WARNING] /D:/Git/Instabeat/src/main/java/user/instabeat/me/pages/GetStartedPage.java: Recompile with -Xlint:unchecked for details.
+[INFO] 2 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Git/Instabeat/src/main/java/user/instabeat/me/pagesMainFunctions/PagesWebElements.java:[12,37] package user.instabeat.me.configTests does not exist
+[ERROR] /D:/Git/Instabeat/src/main/java/user/instabeat/me/pagesMainFunctions/PagesWebElements.java:[14,39] cannot find symbol
+  symbol: class TestConfiguration
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.128 s
+[INFO] Finished at: 2015-01-27T16:41:19+02:00
+[INFO] Final Memory: 19M/279M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project webAutomation: Compilation failure: Compilation failure:
+[ERROR] /D:/Git/Instabeat/src/main/java/user/instabeat/me/pagesMainFunctions/PagesWebElements.java:[12,37] package user.instabeat.me.configTests does not exist
+[ERROR] /D:/Git/Instabeat/src/main/java/user/instabeat/me/pagesMainFunctions/PagesWebElements.java:[14,39] cannot find symbol
+[ERROR] symbol: class TestConfiguration
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project webAutomation: Compilation failure
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:120)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:355)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:216)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+	at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute(AbstractCompilerMojo.java:858)
+	at org.apache.maven.plugin.compiler.CompilerMojo.execute(CompilerMojo.java:129)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:132)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	... 19 more
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

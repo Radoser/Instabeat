@@ -9,9 +9,9 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import user.instabeat.me.configTests.TestConfiguration;
+//import user.instabeat.me.configTests.TestConfiguration;
 
-public class PagesWebElements extends TestConfiguration{
+public class PagesWebElements /*extends TestConfiguration*/{
 	
 	protected WebDriver driver;
 	

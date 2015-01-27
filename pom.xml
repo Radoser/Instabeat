@@ -4,7 +4,7 @@
 
   <groupId>user.instabeat.me</groupId>
   <artifactId>webAutomation</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>webAutomation</name>
@@ -20,14 +20,12 @@
 	    	<groupId>org.testng</groupId>
 				<artifactId>testng</artifactId>
 				<version>6.8.17</version>
-					<scope>test</scope>
 		</dependency>
 	    
 	    <dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 				<artifactId>selenium-java</artifactId>
 					 <version>2.44.0</version> 
-						<scope>test</scope>
 		</dependency>
 			
 		<dependency>
@@ -36,8 +34,6 @@
 						<version>2.44.0</version>
 		</dependency>
 		
-
-		
 		<dependency>
 	          	<groupId>log4j</groupId>
 	          		<artifactId>log4j</artifactId>
@@ -45,13 +41,23 @@
 		</dependency>
 		
 		<dependency>
-	          	<groupId>org.sikuli.script</groupId>
+	          	<groupId>sikuli</groupId>
 	          		<artifactId>sikuli</artifactId>
 	          		<version>1.0.1</version>
 		</dependency>
 	
-
-
+		<dependency>
+	          	<groupId>org</groupId>
+	          		<artifactId>json</artifactId>
+	          		<version>20120521</version>
+		</dependency>
+		
+		<dependency>
+				<groupId>javax.mail</groupId>
+					<artifactId>mail</artifactId>
+					<version>1.5.0-b01</version>
+   		</dependency>
+		
  </dependencies>
   
   <build>
@@ -74,6 +80,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+	
 	</build>
   
      <reporting>
@@ -105,8 +112,7 @@
                     <inherited>true</inherited>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.2</version>
-                    
+                    <version>3.2</version>    
                 </plugin> 
        
       
