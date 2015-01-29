@@ -14,7 +14,7 @@
 		<!-- <suite-file path = "ie.xml" /> -->
 		
 		<!-- FF suite -->
-		<!-- <suite-file path = "firefox.xml" /> -->
+		<suite-file path = "firefox.xml" />
 	
 	</suite-files>
 </suite>
