@@ -49,7 +49,7 @@ public class ForgotPasswordPage extends PagesMainFunctions{
 
 
 	public void checkErrorMessage() throws InterruptedException {
-		waitUntillErrorMessageAppears(ResetPassErrorMessages, parameters.EMuserNotFound, 10);
+		waitUntillMessageAppears(ResetPassErrorMessages, parameters.EMuserNotFound, 10);
 		Assert.assertEquals(parameters.EMuserNotFound, ResetPassErrorMessages.getText());
 	}
 	

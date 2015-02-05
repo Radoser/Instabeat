@@ -193,7 +193,7 @@ public class PagesMainFunctions extends PagesWebElements{
 			field.sendKeys(values.get(i));
 			getTheValueFromFieldUsingJS(field, "id");
 			button.click();
-			waitUntillErrorMessageAppears(errorElement, error, 10);
+			waitUntillMessageAppears(errorElement, error, 10);
 			Assert.assertEquals(error, errorElement.getText(), "Expected " + "\'" + error + "\'"  + " error is not equals to Actual " + "\'" + errorElement.getText() + "\'" + "error");
 			field.clear();
 		}
@@ -328,7 +328,7 @@ public class PagesMainFunctions extends PagesWebElements{
 		return (new WebDriverWait(driver, seconds * 1000)).until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public boolean waitUntillErrorMessageAppears(WebElement element, String message, int seconds){
+	public boolean waitUntillMessageAppears(WebElement element, String message, int seconds){
 		return (new WebDriverWait(driver, seconds * 1000)).until(ExpectedConditions.textToBePresentInElement(element, message));
 	}
 	
@@ -453,7 +453,7 @@ public class PagesMainFunctions extends PagesWebElements{
 	}
 	
 	public void checkTheGreenNotificationMessage(String greenMessage) {
-		waitUntillErrorMessageAppears(greenNotification, greenMessage, 5);
+		waitUntillMessageAppears(greenNotification, greenMessage, 5);
 		Assert.assertTrue(verificationOfElementsOnPages(greenNotification), "Green notification box is not displayed after update");
 		Assert.assertEquals(greenNotification.getText(), greenMessage, "The green notification is not equal to expected one: ");
 	}

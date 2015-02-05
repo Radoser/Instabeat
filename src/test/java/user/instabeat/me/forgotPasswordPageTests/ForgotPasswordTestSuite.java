@@ -10,7 +10,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class ForgotPasswordTestSuite extends TestConfiguration{
 
-	@Test(priority = 2)
+	@Test(priority = 5)
 	public void ResetPasswordValidation() throws InterruptedException{
 				
 		LoginPage onLoginPage = new LoginPage(this.driver);

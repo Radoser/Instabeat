@@ -15,7 +15,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class ProfileTestSuite extends TestConfiguration{
 	
-	@Test(groups = {"Sanity"}, priority = 6)
+	@Test(groups = {"Sanity"}, priority = 12)
 	public void UserCanUpdateProfile(){
 		
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -50,7 +50,7 @@ public class ProfileTestSuite extends TestConfiguration{
 		onProfilePage.logout();
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 6)
+	@Test(groups = {"Sanity"}, priority = 13)
 	public void userCanChangeProfilePicture() throws IOException, InterruptedException, FindFailed{
 		LoginPage onLoginPage = new LoginPage(driver);
 		Utils.Log.info("|Logging in...");
@@ -72,7 +72,7 @@ public class ProfileTestSuite extends TestConfiguration{
 		onProfilePage.logout();		
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 16)
+	@Test(groups = {"Sanity"}, priority = 14)
 	public void checkIfHeightIsProperAfterChanges() throws Exception {
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -110,7 +110,7 @@ public class ProfileTestSuite extends TestConfiguration{
 		onHomePage.logout();
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 17, enabled = false) //TO DO need to fix this test 					 
+	@Test(groups = {"Sanity"}, priority = 15, enabled = false) //TO DO need to fix this test 					 
 	public void checkIfHeightIsProperConverted() {
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -148,7 +148,7 @@ public class ProfileTestSuite extends TestConfiguration{
 		onHomePage.logout();
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 18)
+	@Test(groups = {"Sanity"}, priority = 16)
 	public void checkIfWeightIsProperAfterChanges() throws Exception{
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -186,7 +186,7 @@ public class ProfileTestSuite extends TestConfiguration{
 		onHomePage.logout();
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 19) //NEED to add test: check the weight and height after click on Update BUT only after developer fix it
+	@Test(groups = {"Sanity"}, priority = 17) //NEED to add test: check the weight and height after click on Update BUT only after developer fix it
 	public void checkIfWeightIsProperConverted() {
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -222,7 +222,7 @@ public class ProfileTestSuite extends TestConfiguration{
 		onHomePage.logout();
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 18)
 	public void ProfileValidation() throws InterruptedException{
 				
 		LoginPage onLoginPage = new LoginPage(driver);

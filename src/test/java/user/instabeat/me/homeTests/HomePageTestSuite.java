@@ -12,7 +12,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class HomePageTestSuite extends TestConfiguration{
 	
-	@Test(groups = {"Sanity"}, priority = 5)
+	@Test(groups = {"Sanity"}, priority = 8)
 	public void UserCanChooseExistSession() {
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -43,7 +43,7 @@ public class HomePageTestSuite extends TestConfiguration{
 		onHomePage.logout();
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 14)
+	@Test(groups = {"Sanity"}, priority = 9)
 	public void ValidateValuesInFooter() throws Exception{
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -54,6 +54,9 @@ public class HomePageTestSuite extends TestConfiguration{
 		Utils.Log.info("|Logging in...");
 		onLoginPage.fullLogin();
 		HomePage onHomePage = onLoginPage.LoginButton();
+		
+		Utils.Log.info("|Check if user logged in");
+		onLoginPage.isUserLoggedIn();
 		
 		Utils.Log.info("|Checking if duration time is proper...");
 		onHomePage.checkIfDurationTimeIsProper();
@@ -68,7 +71,7 @@ public class HomePageTestSuite extends TestConfiguration{
 		onHomePage.logout();
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 15, enabled = false)
+	@Test(groups = {"Sanity"}, priority = 10, enabled = false)
 	public void editActivityCheck(){
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -83,7 +86,7 @@ public class HomePageTestSuite extends TestConfiguration{
 		/*........*/
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 20)
+	@Test(groups = {"Sanity"}, priority = 11)
 	public void checkDefaultActivity () throws Exception {
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -91,13 +94,15 @@ public class HomePageTestSuite extends TestConfiguration{
 		Utils.Log.info("|Sending session to the server...");
 		onLoginPage.sendSession();
 		
+		Thread.sleep(3000);
+		
 		Utils.Log.info("|Logging in...");
 		onLoginPage.fullLogin();
 		
 		HomePage onHomePage = onLoginPage.LoginButton();
 
 		Utils.Log.info("|Check if user logged in");
-		onHomePage.isHomePagePresent();
+		onLoginPage.isUserLoggedIn();
 		
 		onHomePage.getDefaultActivityFromHomePage();
 				

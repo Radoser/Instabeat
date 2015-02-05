@@ -12,7 +12,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class SocialConnectionTestSuite extends TestConfiguration{
 
-	@Test(groups = {"Sanity"}, priority = 11, enabled = false)
+	@Test(groups = {"Sanity"}, priority = 25, enabled = false)
 	public void userCanConnectToFB(){	
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -36,7 +36,7 @@ public class SocialConnectionTestSuite extends TestConfiguration{
 		Utils.Log.info("<<-----Finishing running test-----< \n---------------------------------------------------");
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 12, enabled = false)
+	@Test(groups = {"Sanity"}, priority = 26, enabled = false)
 	public void UserCanShareGraphFB(){
 		
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -71,7 +71,7 @@ public class SocialConnectionTestSuite extends TestConfiguration{
 		
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 13, enabled = false)
+	@Test(groups = {"Sanity"}, priority = 27, enabled = false)
 	public void UserCanConnectToTwitter(){
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -100,7 +100,7 @@ public class SocialConnectionTestSuite extends TestConfiguration{
 		Utils.Log.info("<<-----Finishing running test-----< \n---------------------------------------------------");
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 14, enabled = false)
+	@Test(groups = {"Sanity"}, priority = 28, enabled = false)
 	public void UserCanShareGraphTwitter(){
 		
 		LoginPage onLoginPage = new LoginPage(driver);

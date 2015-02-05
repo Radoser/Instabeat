@@ -2,11 +2,12 @@ package user.instabeat.me.loginTests;
 
 import org.testng.annotations.Test;
 
+import user.instabeat.me.configTests.RemoteTestConfiguration;
 import user.instabeat.me.configTests.TestConfiguration;
 import user.instabeat.me.pages.LoginPage;
 import user.instabeat.me.pagesMainFunctions.Utils;
 
-public class LoginPageTestSuite extends TestConfiguration {
+public class LoginPageTestSuite extends TestConfiguration /*RemoteTestConfiguration*/{
 			
 	@Test(groups = "Sanity", priority = 0, enabled = false)
 	public void checkAllLinksOnWebPage() {
@@ -15,7 +16,7 @@ public class LoginPageTestSuite extends TestConfiguration {
 		onLoginPage.checkAllLinksFromLoginPage();		
 	}
 
-	@Test(groups = {"Sanity"}, priority = 1)
+	@Test(priority = 1, groups = {"Sanity"})
 	public  void UserCanLogin() {
 		
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -35,7 +36,7 @@ public class LoginPageTestSuite extends TestConfiguration {
 		onLoginPage.logout();
 	}
 
-	@Test(groups = {"Sanity"}, priority = 2)
+	@Test(priority = 2, groups = {"Sanity"})
 	public void UserCannotLogin() {
 		
 		LoginPage onLoginPage = new LoginPage(driver);

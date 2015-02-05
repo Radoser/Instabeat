@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="FF test suite">
+<suite name="FF test suite" >
  
- <test name = "FFTest">
+ <test name = "FFTest"> <!-- parallel="methods" thread-count="3" -->
  	<parameter name="browserName" value="firefox" />
  		
- 			 <classes>                   
+ 		<classes>                   
                      <class name="user.instabeat.me.loginTests.LoginPageTestSuite" />
-                     <class name="user.instabeat.me.homeTests.HomePageTestSuite" /> 
-                     <class name="user.instabeat.me.getStartedPageTests.GetStartedTestSuite" /> 
-                    <!--  <class name="user.instabeat.me.fullRegisterTests.RegistrationTestSuite" /> FIXES ARE NEEDED FROM DEVELOPER SIDE--> 
-                     <class name="user.instabeat.me.forgotPasswordTests.ForgotPasswordTestsSuite" />  
-                     <class name="user.instabeat.me.forgotPasswordPageTests.ForgotPasswordTestSuite" />
-                    <!--  <class name="user.instabeat.me.dashboard.socialConnectionTests.SocialConnectionTestSuite" /> DOESN"T WORK FOR STAGING--> 
-                     <class name="user.instabeat.me.dashboard.profileTests.ProfileTestSuite" />
+                    <!-- <class name="user.instabeat.me.homeTests.HomePageTestSuite" /> 
+                     <class name="user.instabeat.me.getStartedPageTests.GetStartedTestSuite" />  
+                     <class name="user.instabeat.me.fullRegisterTests.RegistrationTestSuite" /> 
+               	     <class name="user.instabeat.me.forgotPasswordTests.ForgotPasswordTestsSuite" />
+                     <class name="user.instabeat.me.forgotPasswordPageTests.ForgotPasswordTestSuite" /> 
+                     <class name="user.instabeat.me.dashboard.profileTests.ProfileTestSuite" /> 
                      <class name="user.instabeat.me.dashboard.profileSettingsTests.ProfileSettingsTestSuite" />  
-                     <class name="user.instabeat.me.dashboard.HRZTests.HRZTestSuite" />
-              </classes>
+                     <class name="user.instabeat.me.dashboard.HRZTests.HRZTestSuite" /> -->
+                <!-- <class name="user.instabeat.me.dashboard.socialConnectionTests.SocialConnectionTestSuite" /> DOESN"T WORK FOR STAGING--> 
+		</classes>
  
  </test>
  </suite>

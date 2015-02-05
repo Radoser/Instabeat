@@ -9,9 +9,7 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-//import user.instabeat.me.configTests.TestConfiguration;
-
-public class PagesWebElements /*extends TestConfiguration*/{
+public class PagesWebElements {
 	
 	protected WebDriver driver;
 	
@@ -185,6 +183,9 @@ public class PagesWebElements /*extends TestConfiguration*/{
 	@FindBy(css = ".close_ic")
 	public WebElement DeleteOneSessionButton;
 	
+	@FindBy(id = "recap_metric")
+	public WebElement TotalDistanceText;
+	
 	/* ----------------------------------------------------------------------  Profile Page */
 	@FindBy(xpath = "//*[text()='Profile']")
 	public WebElement ProfileTab;
@@ -357,7 +358,7 @@ public class PagesWebElements /*extends TestConfiguration*/{
 	@FindBy(xpath = "//*[@class = 'float-right header-button']/a[@href = '/user/']")
 	public WebElement LoginLink;
 	
-	@FindBy(xpath = "//span[@class = 'tooltipspan'][@style = 'white-space: nowrap;']")
+	@FindBy(id = "confirmspan") //span[@class = 'tooltipspan'][@style = 'white-space: nowrap;']
 	public WebElement greenNotification;
 	
 }

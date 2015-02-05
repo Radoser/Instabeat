@@ -33,6 +33,7 @@ public class PostSessions {
 	            httppost.addHeader("Accept-Language", "en-US,*");
 	                       
 	            FileBody bin = new FileBody(new File("D:\\Java\\Projects\\session.bin"));
+//	            FileBody bin = new FileBody(new File("D:\\JMeter\\session.bin"));
 	            
 	            HttpEntity reqEntity = MultipartEntityBuilder.create()
 	            		.addTextBody("user[userId]", username)

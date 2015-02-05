@@ -22,7 +22,8 @@ public class HomePage extends PagesMainFunctions{
 	}
 
 	public void isCongratsPresent() {
-		isCongratsMessagePresent("Congratulations! Please sync your device and you are ready to swim!", CongratsMessage);
+		checkTheGreenNotificationMessage(parameters.SMnewRegisteredUser);
+		System.out.println("--------------------------------------------------------------");
 	}
 
 	public void cliclOnCalendarButton() {
@@ -56,9 +57,12 @@ public class HomePage extends PagesMainFunctions{
 	public void chooseDateWithSessionRandomly() {
 
 		Random random = new Random();
-
+		try {
 		WebElement element = DatesWithSessions.get(random.nextInt(DatesWithSessions.size()));
 		element.click();
+			}catch (Exception e){
+				System.out.println("here need to fix");
+			}
 //		Utils.waitPage();
 	}
 
@@ -124,6 +128,7 @@ public class HomePage extends PagesMainFunctions{
 	}
 
 	public void checkIfDurationTimeIsProper() {
+		waitUntillElementWillBeVisible(SessionDuration, 5);
 		Assert.assertEquals(SessionDuration.getText(), SessionDurationInFooter.getText());
 	}
 
@@ -131,7 +136,7 @@ public class HomePage extends PagesMainFunctions{
 
 		/*for replace digits -  String mk = PoolLength.getText().replaceAll("[0-9 m ]",""); //("[a-z ]", "");
 		System.out.println(mk);*/
-
+		double TotalDistance;
 		if(PoolLength.getText().contains("pool")){
 
 			Utils.Log.info("|Pool is activated - checking total distance");
@@ -141,12 +146,18 @@ public class HomePage extends PagesMainFunctions{
 			String result2 = stripNonDigits(LapsAmount.getText());
 			int LapsAmountDigit = Integer.parseInt(result2);
 
-			int TotalDistance = PoolLengthDigit * LapsAmountDigit;
+			if (TotalDistanceText.getText().equals("meters")){
+				TotalDistance = PoolLengthDigit * LapsAmountDigit;	
+			}else {
+				TotalDistance = Math.round((PoolLengthDigit * LapsAmountDigit) * 1.0936133);
+				int TotalDistance2 = (int)TotalDistance;
+				System.out.println(TotalDistance2);
+			}			
 
 			String result3 = stripNonDigits(SessionTotalDistance.getText());
 			int SessionTotalDistanceDigit = Integer.parseInt(result3);
 
-			Assert.assertEquals(SessionTotalDistanceDigit, TotalDistance);
+			Assert.assertEquals(SessionTotalDistanceDigit, TotalDistance, "The value in Total Distance field is not proper");
 			Utils.Log.info("|Total distance is proper");
 
 		}else{
@@ -202,17 +213,17 @@ public class HomePage extends PagesMainFunctions{
 		waitUntillElementWillBeVisible(PoolLength, 5);
 		
 		if (PoolLength.getText().equals("Open water")){
-			Utils.Log.info("The activity is in " + PoolLength.getText() + " on Home");
+			Utils.Log.info("|The activity is in " + PoolLength.getText() + " on Home");
 			textOnHome = PoolLength.getText();
 			return textOnHome;	
 			
 			}else if (PoolLength.getText().split("\\s")[2].equals("pool")){
 				textOnHome = PoolLength.getText().split("\\s")[2];
-				Utils.Log.info("The activity is in " + PoolLength.getText() + " on Home");
+				Utils.Log.info("|The activity is in " + PoolLength.getText() + " on Home");
 				return textOnHome;
 				
 			}else {
-				Utils.Log.info("Driver cannot find the webelement: " + PoolLength);
+				Utils.Log.info("|Driver cannot find the webelement: " + PoolLength);
 				return "Driver cannot find the webelement: " + PoolLength;
 			}
 		
@@ -236,6 +247,7 @@ public class HomePage extends PagesMainFunctions{
 	}
 	
 	public void deleteOneSession() {
+		waitUntillElementWillBeVisible(DeleteOneSessionButton, 5);
 		DeleteOneSessionButton.click();
 		OkButtonForDelete.click();
 	}

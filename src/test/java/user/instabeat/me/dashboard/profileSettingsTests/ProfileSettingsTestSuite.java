@@ -12,7 +12,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class ProfileSettingsTestSuite extends TestConfiguration{
 	
-	@Test(groups = {"Sanity"}, priority = 7)
+	@Test(groups = {"Sanity"}, priority = 19)
 	public void userCanChangePassword(){
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -41,7 +41,7 @@ public class ProfileSettingsTestSuite extends TestConfiguration{
 		onProfilePageSettings.logout();
 	}
 	
-	@Test(groups = {"Sanity"}, priority = 8)
+	@Test(groups = {"Sanity"}, priority = 20)
 	public void userCanUpdateProfileSettings(){
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -65,7 +65,7 @@ public class ProfileSettingsTestSuite extends TestConfiguration{
 		onProfilePageSettings.logout();
 	}
 	
-	@Test(priority = 9, enabled = false)
+	@Test(priority = 21, enabled = false)
 	public void userCanDeleteAllSessions(){
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -94,7 +94,7 @@ public class ProfileSettingsTestSuite extends TestConfiguration{
 		onHomePage.logout();
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 22)
 	public void ProfileSettingsValidation(){
 				
 		LoginPage onLoginPage = new LoginPage(driver);

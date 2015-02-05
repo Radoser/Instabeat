@@ -11,7 +11,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class ForgotPasswordTestsSuite extends TestConfiguration{
 
-	@Test(groups = {"Sanity"}, priority = 3)
+	@Test(groups = {"Sanity"}, priority = 6)
 	public void UserForgotPassword() throws Exception {
 			
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -24,7 +24,10 @@ public class ForgotPasswordTestsSuite extends TestConfiguration{
 		
 		Utils.Log.info("|Checking for proper user email");
 		onForgotPasswordPageResults.checkUserEmail();
-
+		
+		/*Here we need to wait for proper email*/
+		Thread.sleep(3000);
+		
 		/*Get confirm message from email*/
 		Utils.Log.info("|Getting Reset link from IMAP server...");
 		ResetPasswordPage onResetPasswordPage = onForgotPasswordPageResults.getConfirmationFromEmailIMAP();

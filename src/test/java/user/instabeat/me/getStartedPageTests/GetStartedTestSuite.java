@@ -9,7 +9,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class GetStartedTestSuite extends TestConfiguration{
 	
-	@Test(priority = 3, enabled = true)
+	@Test(priority = 4, enabled = true)
 	public void GetStartedValidation(){
 				
 		LoginPage onLoginPage = new LoginPage(driver);

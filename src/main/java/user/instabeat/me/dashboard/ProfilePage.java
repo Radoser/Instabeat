@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.sikuli.natives.SysUtil;
 import org.sikuli.script.FindFailed;
 import org.testng.Assert;
 
@@ -82,7 +83,7 @@ public class ProfilePage extends PagesMainFunctions{
 	}
 
 	public void checkMessageAboutUpdate() {
-		waitUntillErrorMessageAppears(greenNotification, parameters.SMProfileUpdate, 5);
+		waitUntillMessageAppears(greenNotification, parameters.SMProfileUpdate, 5);
 		Assert.assertTrue(verificationOfElementsOnPages(greenNotification), "Green notification box is not displayed after Profile update");
 	}
 
@@ -176,6 +177,8 @@ public class ProfilePage extends PagesMainFunctions{
 		
 	public String getTheValueFromHeightField() {		
 		heightValue = getTheValueFromFields(HeightCmField);
+		System.out.println(getTheTextFromElementUsingJS("value"));
+		System.out.println(heightValue);
 		Utils.Log.info("|The value from Height field is: " + heightValue);
 		return heightValue;
 	}

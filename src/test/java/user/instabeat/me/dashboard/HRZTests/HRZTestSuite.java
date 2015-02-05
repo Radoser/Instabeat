@@ -10,7 +10,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class HRZTestSuite extends TestConfiguration{
 	
-	@Test(groups = {"Sanity"}, priority = 10, enabled = false)
+	@Test(groups = {"Sanity"}, priority = 23, enabled = false)
 	public void userCanUpdateHRZPage(){
 			
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -41,7 +41,7 @@ public class HRZTestSuite extends TestConfiguration{
 		onHeartRateZonesPage.logout();
 	}
 	
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 24, enabled = false)
 	public void HeartRateZonesValidation(){
 			
 		LoginPage onLoginPage = new LoginPage(driver);

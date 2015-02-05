@@ -29,6 +29,7 @@ public class ParametersManager {
 	public String EMdefaultPoolLength;
 	public String EMrequiredFirstName;
 	public String EMwrongDataInHRZBox;
+	public String SMnewRegisteredUser;
 	public String EMrequiredLastName;
 	public String EMpasswordRequired;
 	public String EMpasswordNotMatch;
@@ -89,6 +90,7 @@ public class ParametersManager {
 			SMProfileUpdate = prop.get("profileUpdate").toString();
 			SMprofileSettingsUpdate = prop.get("profileSettingsUpdate").toString();
 			SMchangedPassword = prop.get("changedPassword").toString();
+			SMnewRegisteredUser = prop.get("newRegisteredUser").toString();
 			
 		} catch (IOException e) {
 			e.printStackTrace();

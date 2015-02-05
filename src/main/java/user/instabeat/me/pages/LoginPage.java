@@ -17,6 +17,7 @@ public class LoginPage extends PagesMainFunctions{
 
 	public void verifyPageTitle() {
 		String	expected = "Login | Instabeat";
+		waitUntillElementWillBeVisible(LoginButton, 5);
 		String	actual = driver.getTitle();
 			Assert.assertEquals(expected, actual, "Expected title is not equals to actual title ");
 			Utils.Log.info("|Actual Page is: "+actual);
@@ -77,7 +78,7 @@ public class LoginPage extends PagesMainFunctions{
 
 	public void checkErrorMessage() {
 //		waitUntillElementWillBeVisible(ErrorMessages, 5);
-		waitUntillErrorMessageAppears(ErrorMessages,parameters.EMincorrectCredentials,5);
+		waitUntillMessageAppears(ErrorMessages,parameters.EMincorrectCredentials,5);
 		Assert.assertEquals(parameters.EMincorrectCredentials, ErrorMessages.getText());
 	}
 

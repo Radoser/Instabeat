@@ -17,7 +17,7 @@ import user.instabeat.me.pagesMainFunctions.Utils;
 
 public class RegistrationTestSuite extends TestConfiguration{
 
-	@Test(groups = "Sanity", priority = 4)
+	@Test(groups = "Sanity", priority = 7)
 	public void UserCanRegister() throws Exception {
 				
 		LoginPage onLoginPage = new LoginPage(driver);
@@ -45,11 +45,15 @@ public class RegistrationTestSuite extends TestConfiguration{
 		
 		/*Second step of register*/
 		Utils.Log.info("|Getting confirmation link from IMAP server...");
+		
+		/*Here we need to wait for proper email*/
+		Thread.sleep(3000);
+		
 		GetStartedSecondStep onGetStartedSecondStep = onGetSartedFirstStep.getConfirmationLink();
 		Utils.Log.info("|Check second step of register - Download page");
 		onGetStartedSecondStep.verifyGetInstabeatConnectText();
 		onGetStartedSecondStep.downloadApp();
-		onGetStartedSecondStep.clickOnSave();
+//		onGetStartedSecondStep.clickOnSave();
 		
 		/*Login from App*/
 		Utils.Log.info("|Logging from App using new created user...");
@@ -61,6 +65,7 @@ public class RegistrationTestSuite extends TestConfiguration{
 		Utils.Log.info("|Filling in RHR data");
 		onGetStartedThirdStep.typeRHRValue();
 		onGetStartedThirdStep.clickOnCalculateButton();
+		Thread.sleep(1000);
 		HomePage onHomePage = onGetStartedThirdStep.clickOnUpdateButton(); 
 		Utils.Log.info("|Check if registration is successfully");
 		onHomePage.isCongratsPresent();
